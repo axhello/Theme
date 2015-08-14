@@ -1,4 +1,4 @@
-<div><?php if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
+<?php if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
                 
                 <div class="col-md-4"><!-- #md-4 start -->
                     <div class="rightbar">
@@ -52,7 +52,7 @@
                                 </ul>
                             </div><div></div>
                         </section>
-                        <section class="box">
+                        <section class="box-link">
                             <div class="links">
                                 <div class="cell">
                                     <span class="fcolor">友情链接</span>
