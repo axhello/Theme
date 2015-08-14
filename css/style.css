@@ -190,6 +190,7 @@ ol, ul {
     border-radius: 5px;
     box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
     border-bottom: 1px solid #e2e2e2;
+    margin-bottom: 20px;
 }
 .info{
     padding-top: 20px;
@@ -244,20 +245,16 @@ ol, ul {
     color:#ccc;
 }
 
-.article,.reply,.links{
-    margin-top: 20px;
-}
 
 blockquote {
     padding: 10px 20px;
     background-color: #EDF1F4 !important;
     margin: 0 0 20px;
-    font-size: 17.5px;
+    font-size: 15.5px;
     border-left: 5px solid #9E9E9E !important;
 }
 
 #bottom{
-    margin-top: 20px;
     border-top: 1px solid rgba(0, 0, 0, 0.22);
     background: #f8f8f8;
     text-align: center;
@@ -354,3 +351,10 @@ label {
     font-size: 12px;
     line-height: 16px;
     outline: none;
+}
+.box-link{
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid #e2e2e2;
+}
