@@ -12,19 +12,19 @@
                                     <a href="#">
                                         <span>10</span><br/>
                                     </a>
-                                    <span>节点收藏</span>
+                                    <span><?php _e('最新文章'); ?></span>
                                 </div>
                                 <div class="table-2">
                                     <a href="#">
                                         <span>10</span><br/>
                                     </a>
-                                    <span>主题收藏</span>
+                                    <span><?php _e('最近回复'); ?></span>
                                 </div>
                                 <div class="table-3">
                                     <a href="#">
                                         <span>10</span><br/>
                                     </a>
-                                    <span>特别关注</span>
+                                    <span><?php _e('友情链接'); ?></span>
                                 </div>
                             </div>
                         </section>
