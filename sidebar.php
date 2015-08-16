@@ -2,7 +2,7 @@
                 
                 <div class="col-md-4"><!-- #md-4 start -->
                     <div class="rightbar">
-                        <section class="box">
+                        <section class="box-info">
                             <div class="info">
                                 <img src="<?php $this->options->themeUrl('img/head.png'); ?>" alt="head">
                                 <p>Axhello</p>
