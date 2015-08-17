@@ -186,7 +186,11 @@ ol, ul {
     float: right;
 }
 
+<<<<<<< HEAD
 .box-info,.box-art,.box-rep,.box-link{
+=======
+.box-link,.box-info,.box-art{
+>>>>>>> 7bc260fc4b915a38120a130a6616924ff679b5fd
     background-color: #fff;
     border-radius: 5px;
     box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
