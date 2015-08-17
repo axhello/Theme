@@ -186,12 +186,12 @@ ol, ul {
     float: right;
 }
 
-.box{
+.box-link,.box-info,.box-art{
     background-color: #fff;
     border-radius: 5px;
     box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
     border-bottom: 1px solid #e2e2e2;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 .info{
     padding-top: 20px;
@@ -352,11 +352,4 @@ label {
     font-size: 12px;
     line-height: 16px;
     outline: none;
-}
-.box-link,.box-info{
-    background-color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
-    border-bottom: 1px solid #e2e2e2;
-    margin-bottom: 30px;
 }
