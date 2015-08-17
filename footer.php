@@ -18,10 +18,5 @@
     </div>
 </footer><!-- #footer end -->
 </div><!-- #wrapper end -->
-<script src="<?php $this->options->themeUrl('js/jquery-2.1.4.min.js'); ?>"></script>
-<script src="<?php $this->options->themeUrl('js/jquery.pin.js'); ?>"></script>
-<script>
-    $(".box-link").pin()
-</script>
 </body>
 </html>
