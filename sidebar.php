@@ -2,7 +2,7 @@
                 
                 <div class="col-md-4"><!-- #md-4 start -->
                     <div class="rightbar">
-                        <section class="box">
+                        <section class="box-info">
                             <div class="info">
                                 <img src="<?php $this->options->themeUrl('img/head.png'); ?>" alt="head">
                                 <p>Axhello</p>
@@ -12,23 +12,23 @@
                                     <a href="#">
                                         <span>10</span><br/>
                                     </a>
-                                    <span><?php _e('最新文章'); ?></span>
+                                    <span>节点收藏</span>
                                 </div>
                                 <div class="table-2">
                                     <a href="#">
                                         <span>10</span><br/>
                                     </a>
-                                    <span><?php _e('最近回复'); ?></span>
+                                    <span>主题收藏</span>
                                 </div>
                                 <div class="table-3">
                                     <a href="#">
                                         <span>10</span><br/>
                                     </a>
-                                    <span><?php _e('友情链接'); ?></span>
+                                    <span>特别关注</span>
                                 </div>
                             </div>
                         </section>
-                        <section class="box">
+                        <section class="box-art">
                             <div class="article">
                                 <div class="cell">
                                     <span class="fcolor"><?php _e('最新文章'); ?></span>
@@ -39,7 +39,7 @@
                                 </ul>
                             </div>
                         </section>
-                        <section class="box">
+                        <section class="box-rep">
                             <div class="reply">
                                 <div class="cell">
                                     <span class="fcolor"><?php _e('最近回复'); ?></span>
