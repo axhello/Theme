@@ -28,7 +28,7 @@
                                 </div>
                             </div>
                         </section>
-                        <section class="box">
+                        <section class="box-art">
                             <div class="article">
                                 <div class="cell">
                                     <span class="fcolor"><?php _e('最新文章'); ?></span>
