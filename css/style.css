@@ -74,14 +74,14 @@ a.tab:link, a.tab:visited, a.tab:active {
     color: #ddd;
 }
 
-ul li a:hover{
+.post-foot-warp ul li a:hover{
     text-decoration: none;
     color: #fff;
     background-color: #61a8df;
     border-radius: 2px;
 }
-ul li a{
-    display: inline-table;
+.post-foot-warp ul li a{
+    padding: 3px;
 }
 .navbar{
     margin-bottom: 0!important;
@@ -90,13 +90,17 @@ ul li a{
     padding: 10px 15px!important;
 }
 
-.breadcrumb{
-    background-color: #fff!important;
+.bread{
+    padding: 8px 15px;
+    margin-bottom: 20px;
+    list-style: none;
+    background-color: #fff;
+    border-radius: 3px;
+    width: 100%;
+    height: 36px;
 }
-@media (min-width: 1200px) {
-    .container {
-        width: 1000px !important;
-    }
+.container {
+        width: 1050px !important;
 
 }
 .wrapper{
@@ -115,21 +119,29 @@ ul li a{
 .post-title a:hover{
     text-decoration: none;
 }
-
+.clear{
+    clear: both;
+}
+.cate li{
+    float: left;
+    margin: 0px 10px;
+}
 .post{
-    border-radius: 5px;
+    border-radius: 3px;
     background-color: #fff;
     overflow: hidden;
     box-shadow: 0 2px 3px #ddd;
     margin-bottom: 20px;
-    padding: 0 22px 20px 25px;
+    padding: 28px 28px;
 }
 .post-head{
-    padding-top: 8px;
+    margin-bottom: 5px;
+}
+.post-head h3{
+    margin: 5px 0;
 }
 .post-content{
-    margin-top: 10px;
-    margin-bottom: 15px;
+    margin: 18px 0;
     line-height: 22px;
 }
 .post-foot{
@@ -172,12 +184,12 @@ ol, ul {
 
 @media (min-width: 992px){
     .col-md-8 {
-        width: 68.666667%!important;
+        width: 71.666667%!important;
     }
 }
 @media (min-width: 992px){
     .col-md-4 {
-        width: 30.333333%!important;
+        width: 28.333333%!important;
     }
 }
 .rightbar{
@@ -189,7 +201,7 @@ ol, ul {
 
 .box-info,.box-art,.box-rep,.box-link{
     background-color: #fff;
-    border-radius: 5px;
+    border-radius: 3px;
     box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
     border-bottom: 1px solid #e2e2e2;
     margin-bottom: 30px;
@@ -202,9 +214,9 @@ ol, ul {
     border-bottom:1px solid #cccccc;
 }
 .info img{
-    height: 80px;
-    width: 80px;
-    margin-bottom: 6px;
+    height: 42px;
+    width: 42px;
+    margin-bottom: 10px;
     border-radius: 50%;
 }
 .table-info{
@@ -244,7 +256,8 @@ ol, ul {
 }
 
 .fcolor{
-    color:#ccc;
+    color:#A0A0A0;
+    margin-left: 8px;
 }
 
 
@@ -264,8 +277,8 @@ blockquote {
     padding: 26px 0 23px 0px;
 }
 .content{
-    width: 970px;
-    margin: 0px auto 0px auto;
+    width: 999px;
+    margin: 0 auto;
 }
 .post-info{
     margin-top: 20px;
@@ -355,7 +368,11 @@ label {
     outline: none;
 }
 
-@media (min-width:480px){ .col-md-4{display: none;} }
-@media (min-width: 768px){ .col-md-4{display: none;} }
-@media (min-width: 992px){ .col-md-4{display: block;} }
-@media (min-width: 1200px){ .col-md-4{display: block;} }
+@media screen and (max-width: 1163px){
+    .rightbar{
+        display: none!important;
+    }
+}
+@media screen and (max-width: 768px){
+
+}

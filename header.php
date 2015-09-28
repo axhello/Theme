@@ -3,6 +3,7 @@
 <head>
     <meta charset="<?php $this->options->charset(); ?>">
     <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="renderer" content="webkit">
     <title><?php $this->archiveTitle(array(
         'category'  =>  _t('分类 %s 下的文章'),
@@ -11,7 +12,7 @@
         'author'    =>  _t('%s 发布的文章')
         ), '', ' - '); ?><?php $this->options->title(); ?>
     </title>
-    <link rel="stylesheet" href="<?php $this->options->themeUrl('css/bootstrap.min.css'); ?>">
+   <link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link rel="stylesheet" href="<?php $this->options->themeUrl('css/style.css'); ?>">
 
     <!--[if lt IE 9]>
@@ -50,10 +51,17 @@
 </nav> <!-- #nav end -->
 
 <div class="wrapper"><!-- #wrapper start -->
-    <div class="container"><!-- #container start -->
+    <div class="content"><!-- #container start -->
         <div class="row"><!-- #row start -->
             <div class="col-md-8"><!-- #md-8 start -->
                 <div class="main"><!-- #main start -->
-                    <ol class="breadcrumb">
-                        <li><a href="<?php $this->options->siteUrl(); ?>">Home</a></li>
-                    </ol>
+                    <div class="bread">
+                       <div class="widget">
+                            <ul class="cate">
+                            <?php $this->widget('Widget_Metas_Tag_Cloud', array('sort' => 'count', 'ignoreZeroCount' => true, 'desc' => true, 'limit' => 10))->to($tags); ?>  
+                            <?php while($tags->next()): ?>  
+                            <li><a rel="tag" href="<?php $tags->permalink(); ?>"><?php $tags->name(); ?></a></li>
+                            <?php endwhile; ?>
+                            </ul>
+                        </div>
+                    </div>

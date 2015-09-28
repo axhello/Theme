@@ -31,7 +31,7 @@
                         <section class="box-art">
                             <div class="article">
                                 <div class="cell">
-                                    <span class="fcolor"><?php _e('最新文章'); ?></span>
+                                    <span class="glyphicon glyphicon-folder-open" aria-hidden="true"></span><span class="fcolor"><?php _e('最新文章'); ?></span>
                                 </div>
                                 <ul>
                                     <?php $this->widget('Widget_Contents_Post_Recent')
@@ -42,9 +42,9 @@
                         <section class="box-rep">
                             <div class="reply">
                                 <div class="cell">
-                                    <span class="fcolor"><?php _e('最近回复'); ?></span>
+                                    <span class="glyphicon glyphicon-comment" aria-hidden="true"></span><span class="fcolor"><?php _e('最近回复'); ?></span>
                                 </div>
-                                <ul class="cell">
+                                <ul >
                                     <?php $this->widget('Widget_Comments_Recent')->to($comments); ?>
                                     <?php while($comments->next()): ?>
                                     <li class="cell"><?php $comments->author(false); ?>: <a href="<?php $comments->permalink(); ?>"><?php $comments->excerpt(10, '[...]'); ?></a></li>
@@ -55,7 +55,7 @@
                         <section class="box-link">
                             <div class="links">
                                 <div class="cell">
-                                    <span class="fcolor">友情链接</span>
+                                     <span class="glyphicon glyphicon-heart" aria-hidden="true"></span><span class="fcolor">友情链接</span>
                                 </div>
                                 <div class="cell">
                                 <span><a href="#">链接Link</a></span>

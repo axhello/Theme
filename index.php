@@ -12,7 +12,7 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
  $this->need('header.php');
 ?>
         <?php while($this->next()): ?>
-        <article class="post">
+        <article class="post clear">
             <header class="post-head">
                 <h3 class="post-title"> <a href="<?php $this->permalink() ?>"><?php $this->title() ?></a></h3>
                 <time datetime="<?php $this->date('c') ?>" class="post-time"><?php $this->date('Y年m月d日'); ?></time>
