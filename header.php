@@ -36,8 +36,8 @@
         </div>
         <form class="navbar-form navbar-left" role="search"  method="post" action=""><!-- #Search start -->
             <div class="form-input">
-                <input type="text" maxlength="40"  name="s" id="input" value="">
-                <input type="submit" class="submit" value="Search" style="display:none;" />
+                <input class="form-control js-search" name="s" placeholder="Search" autocomplete="off"/>
+                 <button class="button fa icon-search" type="submit"></button>
             </div>
         </form><!-- #Search End -->
         <div class="collapse navbar-collapse">
@@ -51,17 +51,18 @@
 </nav> <!-- #nav end -->
 
 <div class="wrapper"><!-- #wrapper start -->
-    <div class="content"><!-- #container start -->
-        <div class="row"><!-- #row start -->
-            <div class="col-md-8"><!-- #md-8 start -->
-                <div class="main"><!-- #main start -->
-                    <div class="bread">
-                       <div class="widget">
-                            <ul class="cate">
-                            <?php $this->widget('Widget_Metas_Tag_Cloud', array('sort' => 'count', 'ignoreZeroCount' => true, 'desc' => true, 'limit' => 10))->to($tags); ?>  
-                            <?php while($tags->next()): ?>  
-                            <li><a rel="tag" href="<?php $tags->permalink(); ?>"><?php $tags->name(); ?></a></li>
-                            <?php endwhile; ?>
-                            </ul>
+    <div class="row content"><!-- #row start -->
+        <div class="col-md-8"><!-- #md-8 start -->
+            <div class="main"><!-- #main start -->
+                <div class="bread">
+                       <div class="crumbs_patch">
+                            <a href="<?php $this->options->siteUrl(); ?>">Home</a> &raquo;
+                            <?php if ($this->is('index')): ?><!-- 页面为首页时 -->
+                                Index
+                            <?php elseif ($this->is('post')): ?><!-- 页面为文章单页时 -->
+                                <?php $this->category(); ?> &raquo; <?php $this->title() ?>
+                            <?php else: ?><!-- 页面为其他页时 -->
+                                <?php $this->archiveTitle(' &raquo; ','',''); ?>
+                            <?php endif; ?>
                         </div>
-                    </div>
+                </div>

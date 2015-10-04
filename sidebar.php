@@ -1,6 +1,6 @@
 <?php if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
                 
-                <div class="col-md-4"><!-- #md-4 start -->
+         <div class="col-md-4"><!-- #md-4 start -->
                     <div class="rightbar">
                         <section class="box-info">
                             <div class="info">
@@ -8,23 +8,30 @@
                                 <p>Axhello</p>
                             </div>
                             <div class="table-info">
-                                <div class="table-1">
+                                <div class="icon-1">
                                     <a href="#">
-                                        <span>10</span><br/>
-                                    </a>
-                                    <span>节点收藏</span>
+                                        <img class="info-img" src="<?php $this->options->themeUrl('img/github.png'); ?>" alt="GitHub">
+                                    </a> 
                                 </div>
-                                <div class="table-2">
+                                <div class="icon-2">
                                     <a href="#">
-                                        <span>10</span><br/>
+                                        <img class="info-img" src="<?php $this->options->themeUrl('img/twitter.png'); ?>" alt="GitHub">
                                     </a>
-                                    <span>主题收藏</span>
                                 </div>
-                                <div class="table-3">
+                                <div class="icon-3">
                                     <a href="#">
-                                        <span>10</span><br/>
+                                        <img class="info-img" src="<?php $this->options->themeUrl('img/weibo.png'); ?>" alt="GitHub">
                                     </a>
-                                    <span>特别关注</span>
+                                </div>
+                                <div class="icon-4">
+                                    <a href="#">
+                                        <img class="info-img" src="<?php $this->options->themeUrl('img/email.png'); ?>" alt="GitHub">
+                                    </a>
+                                </div>
+                                <div class="icon-5">
+                                    <a href="#">
+                                        <img class="info-img" src="<?php $this->options->themeUrl('img/rss.png'); ?>" alt="GitHub">
+                                    </a>
                                 </div>
                             </div>
                         </section>
@@ -72,7 +79,6 @@
                             </div>
                         </section>
                     </div>
-                </div><!-- #md-4 end -->
-            </div><!-- #row end -->
-        </div><!-- #container end -->
-    </div>
+        </div><!-- #md-4 end -->
+    </div><!-- #row start -->
+</div><!-- #wrapper start -->

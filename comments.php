@@ -1,6 +1,6 @@
 <?php if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
 
-<div id="comments" class="post">
+<div id="comments">
     <header class="post-head">
     <?php $this->comments()->to($comments); ?>
     <?php if ($comments->have()): ?>
@@ -28,11 +28,11 @@
             <div class="post-info">	
     		<span>
                 <label for="author" class="required"><?php _e('称呼'); ?></label>
-    			<input type="text" name="author" id="author" class="text"  placeholder="<?php _e('称呼'); ?>" value="<?php $this->remember('author'); ?>" required />
+    			<input type="text" name="author" id="author" class="text"  placeholder="<?php _e('称呼*'); ?>" value="<?php $this->remember('author'); ?>" required />
     		</span>
     		<span>
                 <label for="mail"<?php if ($this->options->commentsRequireMail): ?> class="required"<?php endif; ?>><?php _e('Email'); ?></label>
-    			<input type="email" name="mail" id="mail" class="text"  placeholder="<?php _e('Email'); ?>" value="<?php $this->remember('mail'); ?>"<?php if ($this->options->commentsRequireMail): ?> required<?php endif; ?> />
+    			<input type="email" name="mail" id="mail" class="text"  placeholder="<?php _e('Email*'); ?>" value="<?php $this->remember('mail'); ?>"<?php if ($this->options->commentsRequireMail): ?> required<?php endif; ?> />
     		</span>
     		<span>
                 <label for="url"<?php if ($this->options->commentsRequireURL): ?> class="required"<?php endif; ?>><?php _e('网站'); ?></label>

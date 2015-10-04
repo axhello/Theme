@@ -9,10 +9,12 @@
  */
 
 if (!defined('__TYPECHO_ROOT_DIR__')) exit;
- $this->need('header.php');
-?>
+ $this->need('header.php'); ?>
+
+
+    <div class="boxcont">
         <?php while($this->next()): ?>
-        <article class="post clear">
+        <article class="post">
             <header class="post-head">
                 <h3 class="post-title"> <a href="<?php $this->permalink() ?>"><?php $this->title() ?></a></h3>
                 <time datetime="<?php $this->date('c') ?>" class="post-time"><?php $this->date('Y年m月d日'); ?></time>
@@ -20,21 +22,16 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
             <section class="post-content">
                 <?php $this->excerpt('200', '...') ?>
             </section>
-            <div class="post-foot">
-                <footer class="post-foot-warp clear">
-                    <ul class="post-tag icon-tag fl">
-                         <li><?php $this->tags('</li><li>', true, '<a>None</a>') ?></li>
+            <footer class="post-foot-warp">
+                    <ul class="post-tag fl">
+                         <li><span class="glyphicon glyphicon-tags" aria-hidden="true"></span><?php $this->tags('</li><li>', true, '<a>None</a>') ?></li>
                     </ul>
                     <a href="<?php $this->permalink() ?>" class="post-foot-link fr">阅读更多</a>
-                </footer>
-            </div>
+            </footer>
         </article>
         <?php endwhile; ?>
-            <nav>
-                <ul class="pagination">
-                 <li><?php $this->pageNav('&laquo;', '&raquo;'); ?></li>
-                </ul>
-            </nav>
+    </div>
+            <nav class="page-nav"><?php $this->pageNav('«', '»'); ?></nav>
         </div>
     </div><!-- #md-8 end -->
     
