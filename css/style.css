@@ -181,6 +181,8 @@ a.tab:link, a.tab:visited, a.tab:active {
     padding: 20px;
     border-bottom: 1px solid #ddd;
 }
+.post img{max-width:100%}
+
 .post-head{
     margin-bottom: 5px;
 }
