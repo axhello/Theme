@@ -6,7 +6,6 @@
 * 更新首页css样式使文章更紧凑，风格更接近v2
 * 加入侧边栏的文章栏滚动停靠
 * 加入了icon图标让整体更美观
-* 
 
 ####感谢<a href="http://www.xiachedan.cc/" target="_blank">JaSho</a>帮忙提出建议及反馈bug
 
