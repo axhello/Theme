@@ -5,7 +5,7 @@
                         <section class="box-info">
                             <div class="info">
                                 <img src="<?php $this->options->themeUrl('img/head.png'); ?>" >
-                                <p><?php $this->user->screenName(); ?></p>
+                                <p><?php $this->author(); ?></p>
                             </div>
                             <div class="table-info">
                                 <div class="icon-1">
