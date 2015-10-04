@@ -6,6 +6,8 @@
 * 更新首页css样式使文章更紧凑，风格更接近v2
 * 加入侧边栏的文章栏滚动停靠
 * 加入了icon图标让整体更美观
+* 
+
 ####感谢<a href="http://www.xiachedan.cc/" target="_blank">JaSho</a>帮忙提出建议及反馈bug
 
 **1.0.2** Upgrade at 2015-10-04
@@ -20,7 +22,7 @@
 
 
 ##<span style="color:#c7254e;">主题演示：</span>[Demo](https://ciyuanai.net/?theme=Theme)
-##<span style="color:#c7254e;">主题下载：</span>[Github](https://github.com/melifes/Theme)
+##<span style="color:#c7254e;">主题下载：</span>[Github](https://github.com/melifes/Theme/archive/master.zip)
 
 
   [1]: https://dn-ciyuanai.qbox.me/2015/10/1180370408.png
