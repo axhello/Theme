@@ -4,7 +4,7 @@
  * 
  * @package For V2EX Theme 
  * @author Axhello
- * @version 1.0
+ * @version 1.0.1
  * @link http://ciyuanai.net
  */
 
