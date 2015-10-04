@@ -4,7 +4,7 @@
                     <div class="rightbar">
                         <section class="box-info">
                             <div class="info">
-                                <img src="<?php $this->options->themeUrl('img/head.png'); ?>" >
+                             <?php $this->author->gravatar(); ?>
                                 <p><?php $this->author(); ?></p>
                             </div>
                             <div class="table-info">
