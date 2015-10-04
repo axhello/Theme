@@ -42,7 +42,7 @@
               </section>
               <footer class="post-foot-warp">
                   <ul class="post-tag fl">
-                          <li><?php $this->tags('</li><li>', true, '<a>None</a>') ?></li>
+                          <li><span class="glyphicon glyphicon-tags" aria-hidden="true"></span><?php $this->tags('</li><li>', true, '<a>None</a>') ?></li>
                   </ul>
                       <a href="<?php $this->permalink() ?>" class="post-foot-link fr">阅读更多</a>
               </footer>
