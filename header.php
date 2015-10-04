@@ -4,7 +4,6 @@
     <meta charset="<?php $this->options->charset(); ?>">
     <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="renderer" content="webkit">
     <title><?php $this->archiveTitle(array(
         'category'  =>  _t('分类 %s 下的文章'),
         'search'    =>  _t('包含关键字 %s 的文章'),
@@ -49,20 +48,3 @@
         </div>
     </div>
 </nav> <!-- #nav end -->
-
-<div class="wrapper"><!-- #wrapper start -->
-    <div class="row content"><!-- #row start -->
-        <div class="col-md-8"><!-- #md-8 start -->
-            <div class="main"><!-- #main start -->
-                <div class="bread">
-                       <div class="crumbs_patch">
-                            <a href="<?php $this->options->siteUrl(); ?>">Home</a> &raquo;
-                            <?php if ($this->is('index')): ?><!-- 页面为首页时 -->
-                                Index
-                            <?php elseif ($this->is('post')): ?><!-- 页面为文章单页时 -->
-                                <?php $this->category(); ?> &raquo; <?php $this->title() ?>
-                            <?php else: ?><!-- 页面为其他页时 -->
-                                <?php $this->archiveTitle(' &raquo; ','',''); ?>
-                            <?php endif; ?>
-                        </div>
-                </div>

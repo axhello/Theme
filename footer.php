@@ -1,5 +1,8 @@
 <?php if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
 
+        </div><!-- #row start -->
+    </div>
+</div><!-- #wrapper start -->
     <footer id="bottom"><!-- #footer start -->
         <div class="content">
             <div class="inner">

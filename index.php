@@ -11,7 +11,23 @@
 if (!defined('__TYPECHO_ROOT_DIR__')) exit;
  $this->need('header.php'); ?>
 
-
+<div class="wrapper"><!-- #wrapper start -->
+    <div class="container">
+    <div class="row"><!-- #row start -->
+        <div class="col-md-8"><!-- #md-8 start -->
+            <div class="main"><!-- #main start -->
+                <div class="bread">
+                       <div class="crumbs_patch">
+                            <a href="<?php $this->options->siteUrl(); ?>">Home</a> &raquo;
+                            <?php if ($this->is('index')): ?><!-- 页面为首页时 -->
+                                Index
+                            <?php elseif ($this->is('post')): ?><!-- 页面为文章单页时 -->
+                                <?php $this->category(); ?> &raquo; <?php $this->title() ?>
+                            <?php else: ?><!-- 页面为其他页时 -->
+                                <?php $this->archiveTitle(' &raquo; ','',''); ?>
+                            <?php endif; ?>
+                        </div>
+                </div>
     <div class="boxcont">
         <?php while($this->next()): ?>
         <article class="post">

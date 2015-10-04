@@ -4,8 +4,8 @@
                     <div class="rightbar">
                         <section class="box-info">
                             <div class="info">
-                                <img src="<?php $this->options->themeUrl('img/head.png'); ?>" alt="head">
-                                <p>Axhello</p>
+                                <img src="<?php $this->options->themeUrl('img/head.png'); ?>" >
+                                <p><?php $this->user->screenName(); ?></p>
                             </div>
                             <div class="table-info">
                                 <div class="icon-1">
@@ -41,7 +41,7 @@
                                     <span class="glyphicon glyphicon-folder-open" aria-hidden="true"></span><span class="fcolor"><?php _e('最新文章'); ?></span>
                                 </div>
                                 <ul>
-                                    <?php $this->widget('Widget_Contents_Post_Recent')
+                                    <?php $this->widget('Widget_Contents_Post_Recent','pageSize=6')
                                     ->parse('<li class="cell"><a href="{permalink}">{title}</a></li>'); ?>
                                 </ul>
                             </div>
@@ -52,12 +52,12 @@
                                     <span class="glyphicon glyphicon-comment" aria-hidden="true"></span><span class="fcolor"><?php _e('最近回复'); ?></span>
                                 </div>
                                 <ul >
-                                    <?php $this->widget('Widget_Comments_Recent')->to($comments); ?>
+                                    <?php $this->widget('Widget_Comments_Recent', 'pageSize=6')->to($comments); ?>
                                     <?php while($comments->next()): ?>
-                                    <li class="cell"><?php $comments->author(false); ?>: <a href="<?php $comments->permalink(); ?>"><?php $comments->excerpt(10, '[...]'); ?></a></li>
+                                    <li class="cell"><?php $comments->author(false); ?>: <a href="<?php $comments->permalink(); ?>"><?php $comments->excerpt(20, '[...]'); ?></a></li>
                                     <?php endwhile; ?>
                                 </ul>
-                            </div><div></div>
+                            </div>
                         </section>
                         <section class="box-link">
                             <div class="links">
@@ -80,5 +80,3 @@
                         </section>
                     </div>
         </div><!-- #md-4 end -->
-    </div><!-- #row start -->
-</div><!-- #wrapper start -->
