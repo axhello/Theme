@@ -8,31 +8,21 @@
                                 <p><?php $this->author(); ?></p>
                             </div>
                             <div class="table-info">
-                                <div class="icon-1">
-                                    <a href="#">
-                                        <img class="info-img" src="<?php $this->options->themeUrl('img/github.png'); ?>" alt="GitHub">
-                                    </a> 
-                                </div>
-                                <div class="icon-2">
-                                    <a href="#">
-                                        <img class="info-img" src="<?php $this->options->themeUrl('img/twitter.png'); ?>" alt="GitHub">
-                                    </a>
-                                </div>
-                                <div class="icon-3">
-                                    <a href="#">
-                                        <img class="info-img" src="<?php $this->options->themeUrl('img/weibo.png'); ?>" alt="GitHub">
-                                    </a>
-                                </div>
-                                <div class="icon-4">
-                                    <a href="#">
-                                        <img class="info-img" src="<?php $this->options->themeUrl('img/email.png'); ?>" alt="GitHub">
-                                    </a>
-                                </div>
-                                <div class="icon-5">
-                                    <a href="#">
-                                        <img class="info-img" src="<?php $this->options->themeUrl('img/rss.png'); ?>" alt="GitHub">
-                                    </a>
-                                </div>
+                                <a href="#" title="Github">
+                                    <span class="icon-1"></span>
+                                </a> 
+                                <a href="#" title="Twitter">
+                                    <span class="icon-2"></span>
+                                </a>
+                                <a href="#" title="Weibo">
+                                    <span class="icon-3"></span>
+                                </a>
+                                <a href="#" title="Email">
+                                    <span class="icon-4"></span>
+                                </a>
+                                <a href="#" title="Rss">
+                                    <span class="icon-5"></span>
+                                </a>
                             </div>
                         </section>
                         <section class="box-art">

@@ -287,21 +287,41 @@ ol, ul {
     border-radius: 50%;
 }
 .table-info{
-    height: 45px;
-    margin-top: 12px;
-    margin-left: 11px;
+    margin: 12px 0 3px 8px;
 }
 .table-info a{
+    display: inline-block;
+    margin-left: 10px;
     text-decoration: none;
 }
-.icon-1,.icon-2,.icon-3,.icon-4,.icon-5{
-    display: inline;
-    margin-left: 10px;
+.icon{
+    background-image: url('../img/info.png');
+    display: inline-block;
 }
 
-.table-info .info-img{
-    width: 32px;
+.icon-1, .icon-2, .icon-3, .icon-4, .icon-5{
+    background-image: url(../img/info.png);
+    background-repeat: no-repeat;
+    width: 33px;
+    height: 34px;
+    display: block;
 }
+.table-info .icon-1{
+    background-position: 0 0;
+}
+.table-info .icon-2{
+    background-position: -43px 0;
+}
+.table-info .icon-3{
+    background-position: -89px 0;
+}
+.table-info .icon-4{
+    background-position: -133px 0;
+}
+.table-info .icon-5{
+    background-position: -175px 0;
+}
+
 
 .cell{
     padding: 10px;
