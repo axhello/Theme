@@ -22,7 +22,7 @@
         <article class="post">
             <header class="post-head">
                 <h3 class="post-title"><?php $this->title() ?></h3>
-                    <time datetime="<?php $this->date('c') ?>" class="post-time"><?php $this->date('Y年m月d日'); ?></time>
+                  <span style="color: #aaa">发布于</span> <time datetime="<?php $this->date('c') ?>" class="post-time"><?php $this->date('Y年m月d日'); ?></time>
             </header>
             <section class="post-content">
                 <?php $this->content(); ?>
