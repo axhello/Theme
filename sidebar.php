@@ -20,7 +20,7 @@
                                 <a href="#" title="Email">
                                     <span class="icon-4"></span>
                                 </a>
-                                <a href="#" title="Rss">
+                                <a href="<?php $this->options->feedUrl(); ?>" title="Rss">
                                     <span class="icon-5"></span>
                                 </a>
                             </div>
