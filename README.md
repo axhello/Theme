@@ -20,6 +20,7 @@
 Upgrade at 2016-01-29
 * 修复评论框错位
 
+####感谢Godoword提出的建议以及意见
 Upgrade at 2016-02-03
 * 修复评论内容错位的一些细节；
 * 修改sibedar的icon可自行更换为其他图标，目前更多图标可在主题文件夹下的`img/icon`下查看，然后直接改动sibedar对应icon的class即可；
