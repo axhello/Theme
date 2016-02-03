@@ -332,7 +332,6 @@ ul {
 .table-info {
     margin: 15px 0 5px 27px;
 }
-
 .table-info a {
     margin-left: 10px;
     width: 32px;
@@ -341,21 +340,19 @@ ul {
     display: inline-block;
     background-repeat: no-repeat;
 }
-.github{
-    background-image: url(../img/icon/Github.png);
-}
-.twitter{
-    background-image: url(../img/icon/twitter.png);
-}
-.weibo{
-    background-image: url(../img/icon/sina_weibo.png);
-}
-.QQ{
-    background-image: url(../img/icon/QQ.png);
-}
-.RSS{
-    background-image: url(../img/icon/RSS.png);
-}
+.github{ background-image: url(../img/icon/GitHub.png);}
+.twitter{background-image: url(../img/icon/twitter.png);}
+.sina_weibo{background-image: url(../img/icon/sina_weibo.png);}
+.tencent_weibo{background-image: url(../img/icon/tencent_weibo.png);}
+.QQ{background-image: url(../img/icon/QQ.png);}
+.RSS{background-image: url(../img/icon/RSS.png);}
+.douban{background-image: url(../img/icon/douban.png);}
+.google-plus{background-image: url(../img/icon/G+.png);}
+.zhuhu{background-image: url(../img/icon/zhihu.png);}
+.email{background-image: url(../img/icon/mail.png);}
+.e_music{background-image: url(../img/icon/e_music.png);}
+.x_music{background-image: url(../img/icon/x_music.png);}
+
 .cell {
     padding: 10px;
     font-size: 12px;

@@ -10,7 +10,7 @@
                             <div class="table-info">
                                 <a href="#" class="github" title="Github"></a> 
                                 <a href="#" class="twitter" title="Twitter"></a>
-                                <a href="#" class="weibo" title="Weibo"></a>
+                                <a href="#" class="sina_weibo" title="Weibo"></a>
                                 <a href="#" class="QQ" title="QQ"></a>
                                 <a href="<?php $this->options->feedUrl(); ?>" class="RSS" title="RSS"></a>
                             </div>
