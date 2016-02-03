@@ -23,28 +23,29 @@
     <?php $this->header(); ?>
 </head>
 <body>
-<nav id="nav" class="navbar navbar-default"><!-- #nav start -->
-    <div class="container">
+<nav class="navbar navbar-default navbar-static-top">
+      <div class="container">
         <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapse" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                <span class="sr-only">Toggle navigation</span>
-            </button>
-            <a class="navbar-brand" href="<?php $this->options->siteUrl(); ?>">
-                <img src="<?php $this->options->themeUrl('img/hello.png'); ?>" border="0" align="default" alt="HELLO" width="94" height="30">
-            </a>
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="<?php $this->options->siteUrl(); ?>">HELLO V2</a>
         </div>
-        <form class="navbar-form navbar-left" role="search"  method="post" action=""><!-- #Search start -->
-            <div class="form-input">
-                <input class="form-control js-search" name="s" placeholder="Search" autocomplete="off"/>
-                 <button class="button fa icon-search" type="submit"></button>
-            </div>
-        </form><!-- #Search End -->
-        <div class="collapse navbar-collapse">
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="<?php $this->options->siteUrl(); ?>">首页</a></li>
+        <div id="navbar" class="navbar-collapse collapse">
+            <form class="navbar-form navbar-left" role="search"  method="post" action=""><!-- #Search start -->
+                <div class="form-input">
+                    <input class="form-control js-search" name="s" placeholder="Search" autocomplete="off"/>
+                     <button class="button fa icon-search" type="submit"></button>
+                </div>
+            </form><!-- #Search End -->
+          <ul class="nav navbar-nav navbar-right">
+           <li><a href="<?php $this->options->siteUrl(); ?>">首页</a></li>
                 <?php $this->widget('Widget_Contents_Page_List')
                 ->parse('<li><a href="{permalink}">{title}</a></li>'); ?>
-            </ul>
-        </div>
-    </div>
-</nav> <!-- #nav end -->
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>

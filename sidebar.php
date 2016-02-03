@@ -8,21 +8,11 @@
                                 <p><?php $this->author(); ?></p>
                             </div>
                             <div class="table-info">
-                                <a href="#" title="Github">
-                                    <span class="icon-1"></span>
-                                </a> 
-                                <a href="#" title="Twitter">
-                                    <span class="icon-2"></span>
-                                </a>
-                                <a href="#" title="Weibo">
-                                    <span class="icon-3"></span>
-                                </a>
-                                <a href="#" title="Email">
-                                    <span class="icon-4"></span>
-                                </a>
-                                <a href="<?php $this->options->feedUrl(); ?>" title="Rss">
-                                    <span class="icon-5"></span>
-                                </a>
+                                <a href="#" class="github" title="Github"></a> 
+                                <a href="#" class="twitter" title="Twitter"></a>
+                                <a href="#" class="weibo" title="Weibo"></a>
+                                <a href="#" class="QQ" title="QQ"></a>
+                                <a href="<?php $this->options->feedUrl(); ?>" class="RSS" title="RSS"></a>
                             </div>
                         </section>
                         <section class="box-art">
@@ -52,7 +42,7 @@
                         <section class="box-link">
                             <div class="links">
                                 <div class="cell">
-                                     <span class="glyphicon glyphicon-heart" aria-hidden="true"></span><span class="fcolor">友情链接</span>
+                                     <span class="glyphicon glyphicon-send" aria-hidden="true"></span><span class="fcolor">友情链接</span>
                                 </div>
                                 <div class="cell">
                                 <span><a href="#">链接Link</a></span>

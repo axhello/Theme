@@ -99,7 +99,11 @@ a.tab:active {
 .navbar-brand {
     padding: 10px 15px!important;
 }
-
+.navbar-brand{
+    line-height: 30px;
+    font-size: 25px;
+    font-weight: 700;
+}
 .navbar-form .form-group {
     position: relative;
 }
@@ -330,48 +334,28 @@ ul {
 }
 
 .table-info a {
-    display: inline-block;
     margin-left: 10px;
+    width: 32px;
+    height: 32px;
     text-decoration: none;
-}
-
-.icon {
-    background-image: url('../img/info.png');
     display: inline-block;
-}
-
-.icon-1,
-.icon-2,
-.icon-3,
-.icon-4,
-.icon-5 {
-    background-image: url(../img/info.png);
     background-repeat: no-repeat;
-    width: 33px;
-    height: 34px;
-    display: block;
 }
-
-.table-info .icon-1 {
-    background-position: 0 0;
+.github{
+    background-image: url(../img/icon/Github.png);
 }
-
-.table-info .icon-2 {
-    background-position: -43px 0;
+.twitter{
+    background-image: url(../img/icon/twitter.png);
 }
-
-.table-info .icon-3 {
-    background-position: -89px 0;
+.weibo{
+    background-image: url(../img/icon/sina_weibo.png);
 }
-
-.table-info .icon-4 {
-    background-position: -133px 0;
+.QQ{
+    background-image: url(../img/icon/QQ.png);
 }
-
-.table-info .icon-5 {
-    background-position: -175px 0;
+.RSS{
+    background-image: url(../img/icon/RSS.png);
 }
-
 .cell {
     padding: 10px;
     font-size: 12px;
@@ -409,11 +393,6 @@ blockquote {
 .post-info {
     margin: 15px 0;
 }
-
-.post-info span {
-    margin-right: 10px;
-}
-
 .textarea {
     width: 90%;
 }
@@ -536,12 +515,13 @@ blockquote {
     padding: 5px 0 0 0;
     border-top: 1px solid #ddd;
     margin: 10px 0;
+    clear: both;
 }
 
 .comment-list li .comment-reply {
-    float: right;
     font-size: .92857em;
-    display: initial;
+    float: right;
+    margin-bottom: 1rem;
 }
 
 .comment-list li .comment-reply a {
@@ -567,13 +547,16 @@ blockquote {
 .comment-list li .comment-author {
     display: block;
     color: #444;
+    font-size: 16px;
 }
 
 .comment-list li .comment-author .avatar {
     float: left;
-    margin: 10px 10px 0 0;
+    margin: 6px 10px 0 0;
     padding: 1px;
     border-radius: 50px;
+    width: 42px;
+    height: 42px;
 }
 
 .comment-list li .comment-author cite {
@@ -591,7 +574,7 @@ blockquote {
     overflow: hidden;
     font-size: 15px;
     line-height: 1.8;
-    display: inline;
+    margin-left: 4rem;
 }
 
 .comment-list li .comment-content p {
@@ -621,8 +604,7 @@ blockquote {
 }
 
 .comment-meta {
-    margin-top: -5px;
-    margin-bottom: 5px;
+    margin-top: -2px;
 }
 
 .comment-meta a {
@@ -633,7 +615,6 @@ blockquote {
 
 .comment-content {
     overflow: hidden;
-    margin: 5px 0px 12px 0px;
     font-size: 15px;
 }
 
