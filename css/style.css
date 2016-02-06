@@ -32,7 +32,10 @@ body {
 ::-webkit-scrollbar-thumb:active {
     background-color: #17BBAF;
 }
-
+*{
+    word-break: break-all;
+    word-wrap: break-word;
+}
 @font-face {
     font-family: 'fontello';
     src: url('../font/fontello.eot?18127066');
