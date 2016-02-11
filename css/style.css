@@ -247,6 +247,16 @@ a.tab:active {
     margin: 10px 0 0 0;
     line-height: 22px;
 }
+.post-content ul{
+    list-style: disc;
+    padding: 0 2rem;
+    margin: .5rem 0;
+}
+.post-content ol{
+    list-style: decimal;
+    padding: 0 2rem;
+    margin: .5rem 0;
+}
 
 .post-foot {
     border-top: 1px solid #ddd;
