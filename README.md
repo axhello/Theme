@@ -32,7 +32,7 @@
 
 
 ##主题演示：[Demo](https://ciyuanai.net/?theme=Theme)
-##主题下载：[Github](https://github.com/melifes/Theme/archive/master.zip)
+##主题下载：[Github](https://github.com/axhello/Theme/archive/master.zip)
 
 
-  [1]: https://dn-ciyuanai.qbox.me/2015/10/1180370408.png
+  [1]: https://o72gatjmx.qnssl.com/2015/10/1180370408.png
