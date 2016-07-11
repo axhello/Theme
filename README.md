@@ -28,10 +28,10 @@
 
 贴个图：
 
+
 ![20150930181527.png][1]
 
 
-##主题演示：[Demo](https://ciyuanai.net/?theme=Theme)
 ##主题下载：[Github](https://github.com/axhello/Theme/archive/master.zip)
 
 
